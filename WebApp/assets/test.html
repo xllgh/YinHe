@@ -1,0 +1,32 @@
+<html>
+	<head>
+	<script type="text/javascript">
+	
+	 function htmlInvokeJava1(toast){
+    	ttt.htmlInvokeJava1(toast);
+    }
+	
+    function htmlInvokeJava2(toast) {
+    console.log("Hello World");
+        var str= ttt.htmlInvokeJava2();
+        alert(str);
+    }
+    
+    
+    function javaInvokeHtml(content){
+    	alert("javaInvokeHtml:"+content);
+    }
+   
+    </script>
+	</head>
+<body>
+<input type="button" value="htmlInvokeJava1" onClick="htmlInvokeJava1('hahaha')"/>
+
+
+<input type="button" value="htmlInvokeJava2" onClick="htmlInvokeJava2('Hello Android!')" />
+
+<input type="button" value="javaInvokeHtml1" onClick="window.ttt.javaInvokeHtml1()">
+
+</body> 
+</html>
+
