@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2007 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <string-array name="wifi_status">
+
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>正在扫描\u2026</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>正在连接\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>正在身份验证\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>正在获取IP\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>已连接</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>已暂停</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>正在断开连接\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>已断开连接</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>失败</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>已阻止</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>状况不佳</item>
+    </string-array>
+
+
+    <!-- Match this with the constants in AccessPoint. -->
+    <skip />
+    <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
+    <string-array name="wifi_security">
+
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>@string/wifi_security_none</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_wep</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_psk_generic</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+
+    <!-- Match this with the constants in WifiDialog. -->
+    <skip />
+    <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+    <string-array name="wifi_eap_method">
+
+        <!-- Do not translate. -->
+        <item>PEAP</item>
+        <!-- Do not translate. -->
+        <item>TLS</item>
+        <!-- Do not translate. -->
+        <item>TTLS</item>
+    </string-array>
+
+    <!-- Phase 2 options -->
+    <string-array name="wifi_phase2_entries">
+        <item>无</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi set up options -->
+    <!-- Note that adding/removing/moving items will need wifi settings code change. -->
+    <string-array name="wifi_network_setup">
+
+        <!-- Manual wifi configuration [CHAR LIMIT=25] -->
+        <item>关闭</item>
+        <!-- WPS is a new standard that allowes secure connection establishment to a home wireless network using a simplified process. WPS push button based configuration involves pushing a button on the router and the device [CHAR LIMIT=25] -->
+        <item>按钮</item>
+        <!-- WPS pin method based configuration. This requires entering a pin obtained from the access point [CHAR LIMIT=25] -->
+        <item>从接入点获取的 PIN</item>
+        <!-- WPS pin method based configuration. This requires generating a pin from this device [CHAR LIMIT=25] -->
+        <item>从此设备生成的 PIN</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <string-array name="wifi_ip_settings">
+
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25] -->
+        <item>静态</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <string-array name="wifi_proxy_settings">
+
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>无</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>手动</item>
+    </string-array>
+
+</resources>

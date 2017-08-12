@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout android:id="@+id/pppoe_login"
+                    style="@style/wifi_section">
+                <LinearLayout
+                        style="@style/wifi_item"
+                        android:singleLine="true" >
+                    <TextView
+                            style="@style/wifi_item_label"
+                            android:text="@string/user_name" />
+
+                    <EditText android:id="@+id/login_username"
+                            style="@style/wifi_item_content"
+                            />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/wifi_item"
+                        android:singleLine="true" >
+                    <TextView
+                            style="@style/wifi_item_label"
+                            android:text="@string/pass" />
+
+                    <EditText android:id="@+id/login_password"
+                            style="@style/wifi_item_content"
+                            android:password="true" />
+                </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

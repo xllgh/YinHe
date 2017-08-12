@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+	android:title="@string/setting_volume_label"
+	android:key="parent">
+
+  <!-- here is update android4.0 -->
+	<com.android.settings.RingerVolumePreference
+		android:key="all_volume_title"
+		android:title="@string/all_volume_title"
+		android:dialogTitle="@string/all_volume_title"/>
+	<!-- Ring -->
+	<!-- <com.android.settings.DefaultRingtonePreference
+		android:key="notification_sound"
+		android:title="@string/notification_sound_title"
+		android:dialogTitle="@string/notification_sound_dialog_title"
+		android:persistent="false"
+		android:ringtoneType="notification" /> -->
+
+	<!-- output port
+	<ListPreference
+		android:key="outputport"
+		android:title="@string/output_port"
+		android:dialogTitle="@string/output_port"
+		android:entries="@array/output_port_show"
+		android:entryValues="@array/output_port_value"
+		android:defaultValue="0"/>	-->
+
+	<!-- output mode
+	<ListPreference
+		android:key="outputmode"
+		android:title="@string/output_mode"
+		android:dialogTitle="@string/output_mode"
+		android:entries="@array/output_mode_show"
+		android:entryValues="@array/output_mode_value"
+		android:defaultValue="0"/>	-->
+
+	<!--
+	<ListPreference
+		android:key="outputdown"
+		android:title="@string/output_down"
+		android:dialogTitle="@string/output_down"
+		android:entries="@array/output_down_show"
+		android:entryValues="@array/output_down_value"
+		android:defaultValue="0"/> -->
+
+	<!-- HDMI -->
+	<ListPreference
+		android:key="hdmimode"
+		android:title="@string/hdmi_output"
+		android:dialogTitle="@string/hdmi_output"
+		android:entries="@array/hdmi_output_show"
+		android:entryValues="@array/hdmi_output_value"
+		android:defaultValue="1">
+	</ListPreference>
+	<!-- SPDIF -->
+	<ListPreference
+		android:key="spdifmode"
+		android:title="@string/sdpif_output"
+		android:dialogTitle="@string/sdpif_output"
+		android:entries="@array/sdpif_output_show"
+		android:entryValues="@array/sdpif_output_value"
+		android:defaultValue="1">
+	</ListPreference>
+	<!-- Blu-ray -->
+	<ListPreference
+		android:key="bluelight"
+		android:title="@string/bluelight_output"
+		android:dialogTitle="@string/bluelight_output"
+		android:entries="@array/bluelight_output_show"
+		android:entryValues="@array/bluelight_output_value"
+		android:defaultValue="0">
+    </ListPreference>
+</PreferenceScreen>
+

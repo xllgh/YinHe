@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txt_path">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="txt_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="txt_content">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="txt_wire_notes_720P">
+        <item name="android:textColor">@color/glad</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20px</item>
+    </style>
+
+    <style name="txt_wire_notes_1080P">
+        <item name="android:textColor">@color/glad</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+    <style name="btn_confirm">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="txt_wifi_item">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="style_dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="txt_hdmi_notes">
+        <item name="android:textColor">@color/glad</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="txt_network_info_content">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="txt_network_info_editor">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

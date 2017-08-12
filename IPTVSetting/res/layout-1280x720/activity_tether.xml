@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/logo" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/tether_ap" />
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="230dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_on"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_on"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_off"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_off"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/ll_bg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/itv_bg"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tether_ssid" />
+
+                <EditText
+                    android:id="@+id/et_tether_ssid"
+                    style="@style/txt_nw_edittext"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:text="@string/tether_ssid_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tether_psw" />
+
+                <EditText
+                    android:id="@+id/et_tether_psw"
+                    style="@style/txt_nw_edittext"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:text="@string/tether_psw_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tether_security" />
+
+                <Spinner
+                    android:id="@+id/sp_tether_security"
+                    style="@style/txt_content"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/tether_security"
+                    android:paddingLeft="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tether_visible" />
+
+                <Spinner
+                    android:id="@+id/sp_tether_visible"
+                    style="@style/txt_content"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/tether_security"
+                    android:nextFocusDown="@+id/btn_save"
+                    android:paddingLeft="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/btn_confirm"
+                android:layout_width="110dip"
+                android:layout_height="35dip"
+                android:background="@drawable/button_sure_cancel"
+                android:text="@string/sure" />
+
+            <Button
+                android:id="@+id/btn_check_update"
+                style="@style/btn_confirm"
+                android:layout_width="110dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="150dip"
+                android:background="@drawable/button_sure_cancel"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

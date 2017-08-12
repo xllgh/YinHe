@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/obtain_status"
+        style="@style/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="15dip"
+        android:ems="10"
+        android:text="@string/auto_get" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:ems="10"
+            android:text="@string/ip_address" />
+
+        <EditText
+            android:id="@+id/et_ip_address"
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:nextFocusLeft="@id/et_ip_address"
+            android:nextFocusRight="@id/et_ip_address"
+            android:nextFocusUp="@+id/tv_LAN_DHCP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:ems="10"
+            android:text="@string/netmask" />
+
+        <EditText
+            android:id="@+id/et_netmask"
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:nextFocusLeft="@id/et_netmask"
+            android:nextFocusRight="@id/et_netmask" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:ems="10"
+            android:text="@string/default_gateway" />
+
+        <EditText
+            android:id="@+id/et_default_gateway"
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:nextFocusLeft="@id/et_default_gateway"
+            android:nextFocusRight="@id/et_default_gateway" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_sure"
+            style="@style/btn_confirm"
+            android:layout_width="110dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_sure_cancle"
+            android:nextFocusDown="@+id/tv_LAN_DHCP"
+            android:nextFocusLeft="@+id/tv_LAN_DHCP"
+            android:nextFocusUp="@+id/tv_LAN_DHCP"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/bt_canle"
+            style="@style/btn_confirm"
+            android:layout_width="110dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="153dip"
+            android:background="@drawable/button_sure_cancle"
+            android:nextFocusDown="@+id/tv_LAN_DHCP"
+            android:nextFocusRight="@+id/tv_LAN_DHCP"
+            android:nextFocusUp="@+id/tv_LAN_DHCP"
+            android:text="@string/cancle" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_wifi_name"
+        style="@style/txt_wifi_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:ellipsize="marquee"
+        android:ems="20"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:id="@+id/iv_signal_lever"
+        android:layout_width="30dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/wifi_five" />
+
+    <TextView
+        android:id="@+id/tv_is_connect"
+        style="@style/txt_wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ems="7"
+        android:textIsSelectable="false" />
+
+</LinearLayout>

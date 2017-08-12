@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#005DCE</color>
+    <color name="blue_two">#3C84CC</color>
+    <color name="black_one">#001020</color>
+    <color name="glad">#FFF900</color>
+    <color name="focused_color">#003269</color>
+</resources>

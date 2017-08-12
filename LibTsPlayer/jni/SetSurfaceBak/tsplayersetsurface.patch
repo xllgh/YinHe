@@ -1,0 +1,104 @@
+diff --git Android.mk Android.mk
+index f1ecc48..f5087f0 100755
+--- Android.mk
++++ Android.mk
+@@ -23,6 +23,7 @@ LOCAL_STATIC_LIBRARIES := libamcodec libamadec
+ 
+ LOCAL_SHARED_LIBRARIES += libamplayer libutils libmedia libz libbinder
+ LOCAL_SHARED_LIBRARIES +=liblog libcutils libdl
++LOCAL_SHARED_LIBRARIES +=libgui
+ 
+ include $(BUILD_SHARED_LIBRARY)
+ #include $(BUILD_EXECUTABLE)
+diff --git CTsPlayer.cpp CTsPlayer.cpp
+index e5bcc74..ab51c3a 100755
+--- CTsPlayer.cpp
++++ CTsPlayer.cpp
+@@ -7,6 +7,7 @@
+ //#include "../LibPlayer/amplayer/player/include/player.h"
+ 
+ //#include "../IPTVPlayer/PubAndroid.h"	 
++using namespace android;
+ #define DPrint(x)
+ 
+ #define M_LIVE	1
+@@ -1279,9 +1280,25 @@ void CTsPlayer::leaveChannel()
+ {
+     Stop();
+ }
++
++
++void CTsPlayer::SetSurface(Surface* pSurface)
++{
++	  sp<ISurfaceTexture> surfaceTexture;
++	  sp<ANativeWindow> 	mNativeWindow;
++	  int usage=0;
++	  surfaceTexture=pSurface->getSurfaceTexture();
++    mNativeWindow=new SurfaceTextureClient(surfaceTexture);
++    native_window_set_usage(mNativeWindow.get(),usage | GRALLOC_USAGE_HW_TEXTURE | GRALLOC_USAGE_EXTERNAL_DISP | GRALLOC_USAGE_AML_VIDEO_OVERLAY);
++}
++
++
+ void CTsPlayer::playerback_register_evt_cb(IPTV_PLAYER_EVT_CB pfunc, void *hander)
+ {
+     pfunc_player_evt = pfunc ;
+ 
+ 	player_evt_hander = hander;
+ }
++
++
++
+diff --git CTsPlayer.h CTsPlayer.h
+index 5f54734..274c45d 100755
+--- CTsPlayer.h
++++ CTsPlayer.h
+@@ -12,21 +12,32 @@
+ #include <arpa/inet.h>
+ #include <netdb.h>
+ #include <unistd.h>
++#include <surfaceflinger/Surface.h>
++#include <surfaceflinger/ISurface.h>
++#include <gui/ISurfaceTexture.h>
++#include <gui/SurfaceTextureClient.h>
++#include <surfaceflinger/ISurfaceComposer.h>
++using namespace android;
++
++
+ extern "C" {
+ #include <amports/vformat.h>
+ #include <amports/aformat.h>
+ #include <codec.h>
+ }
+-
+ #include <string.h>
+ #include <utils/Timers.h>
+ 
++
++
++
+ #define WF
+ 
+ #define TRICKMODE_NONE       0x00
+ #define TRICKMODE_I          0x01
+ #define TRICKMODE_FFFB       0x02
+ #define MAX_AUDIO_PARAM_SIZE 10
++
+ typedef struct{
+ 	unsigned short	pid;//pid
+ 	int				nVideoWidth;//视频宽度
+@@ -108,6 +119,7 @@ public:
+ 	virtual bool IsSoftFit()=0;
+ 	virtual void SetEPGSize(int w, int h)=0;
+ 	
++	virtual void SetSurface(Surface* pSurface);
+ 	//16位色深需要设置colorkey来透出视频；
+      virtual void SwitchAudioTrack(int pid) = 0;
+      virtual void SwitchSubtitle(int pid) = 0;
+@@ -167,6 +179,7 @@ public:
+ 	virtual bool IsSoftFit();
+ 	virtual void SetEPGSize(int w, int h);
+ 
++	virtual void SetSurface(Surface* pSurface);
+ 	//16位色深需要设置colorkey来透出视频；
+ 
+     virtual void SwitchAudioTrack(int pid) ;

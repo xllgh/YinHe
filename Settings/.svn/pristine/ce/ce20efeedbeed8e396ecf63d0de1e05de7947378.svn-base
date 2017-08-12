@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="ethernet_settings_title">Ethernet</string>
+    <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
+
+    <!-- Ethernet configuration dialog -->
+    <string name="eth_con_type_dhcp">DHCP</string>
+    <string name="eth_con_type_manual">Static IP</string>
+    <string name="eth_con_type_pppoe">Pppoe</string>
+    <string name="eth_ipaddr">IP address</string>
+    <string name="eth_gw">Default gateway</string>
+    <string name="eth_mask">Netmask</string>
+    <string name="eth_static_cfg">Static Network Config</string>
+    <string name="eth_dns">DNS</string>
+    <string name="eth_dns1">DNS1</string>
+    <string name="eth_dns2">DNS2</string>
+    <string name="eth_mac">MAC address</string>
+    <string name="eth_dhcp_successed">Connected</string>
+    <string name="eth_dhcp_getting">Obtaining IP address\u2026</string>
+    <string name="eth_static_getting">Connecting\u2026</string>
+    <string name="eth_dhcp_cancel">Disconnected</string>
+    <string name="eth_dhcp_failed">Connect Failed</string>
+    <string name="eth_phy_link_down">Cable not connected</string>
+    <string name="eth_phy_link_up">Cable connected</string>
+    <string name="eth_phy_link_down_check">Cable not connected,please connect your network cable first</string>
+    <string name="eth_static_connect">Connected</string>
+    <string name="eth_static_disconnecting">Disconnecting\u2026</string>
+    <string name="eth_static_disconnect_successed">Disconnected</string>
+    <string name="eth_disconected">Connect Failed</string>
+    <string name="network_interface">Network Interface List</string>
+    <string name="network_cable0">Interface 0</string>
+    <string name="network_cable1">Interface 1</string>
+    <string name="wifi_disguise">WiFi Disguise</string>
+    <string name="button_cancel">CancelMe</string>
+    <string name="button_ok">OK</string>
+    <string name="check_ip">Please check your input</string>
+    <!-- begin  pppoe network add by lWX146298 -->
+    <string name="pppoe_setting">Pppoe Setting</string>
+    <string name="pppoe_disconnect">DisConnected</string>
+    <string name="pppoe_connect">Connected</string>
+    <string name="pppoe_connecting">Connecting......</string>
+    <string name="pppoe_connect_error">UserName or Password Wrong !</string>
+    <string name="pppoe_connect_timeout">Connect Time Out !</string>
+    <string name="pppoe_connect_falied">Connect Failed</string>
+    <string name="local_network_category_title">LOCAL NETWORK SETTING</string>
+    <string name="pppoe_category_title">PPPOE NETWORK SETTING</string>
+    <string name="pppoe_switch_info">Pppoe is Enabled and will be disconnected. Are you sure to switch?</string>
+    <string name="pppoe_dialog_cannel">Cannel</string>
+    <string name="pppoe_dialog_disconnect">Sure</string>
+    <string name="pppoe_disable">Disable</string>
+    <string name="pppoe_auto_reconnect_title">Pppoe Auto Reconnect</string>
+    <string name="pppoe_auto_reconnect_summary">Pppoe will be reconnected automatically after connect Failed</string>
+
+    <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
+    <string name="header_category_wireless_netservice">SHARE</string>
+    <!-- Wallpaper settings fragment title [CHAR LIMIT=30] -->
+    <string name="netservice_settings_fragment_title">start the network service</string>
+    <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
+    <string name="header_category_samba">SAMBA Service</string>
+    <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
+    <string name="header_category_ftp">Ftp Service</string>
+    <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
+    <string name="header_category_nfs">Nfs Service</string>
+
+    <!-- screen scope -->
+    <string name="screen_scope">Display area set</string>
+    <string name="set_scope_top">Top offset</string>
+    <string name="set_scope_left">Left offset</string>
+    <string name="set_scope_width">Right offset</string>
+    <string name="set_scope_height">Bottom offset</string>
+    <string name="exit_ask">Are you sure to switch it</string>
+    <string name="info">Prompt</string>
+    <string name="scope_outside">screen outside</string>
+    <string name="account">account</string>
+    <string name="pppoe_login">Pppoe</string>
+    <string name="pass">password</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="global_element">setting global parameter</string>
+    <string name="server_info">server configuration</string>
+    <string name="work_group">work group </string>
+    <string name="log_count">Log number</string>
+    <string name="serurity_level">security level</string>
+    <string name="down_setting">share setting</string>
+    <string name="down_path">mount path</string>
+    <string name="file_right">mount file permission</string>
+    <string name="directory_right">mount directory permission</string>
+    <string name="user_name">UserName</string>
+    <string name="available_info">available</string>
+    <string name="browseable_info">browseable</string>
+    <string name="writable_info">write</string>
+    <string name="default_0777">0777</string>
+    <string name="client_configuration">client configuration</string>
+    <string name="delete_client">delete a client configuration</string>
+    <string name="login_setting">login setting</string>
+    <string name="login_paths">login path</string>
+    <string name="local_setting">local setting</string>
+    <string name="record_info">record the user so uploads and downloads infomation</string>
+    <string name="local_user">local user</string>
+    <string name="local_time">local time</string>
+    <string name="y_n_update_system">Modify server files</string>
+    <string name="port">port</string>
+    <string name="pass_dialog">Password dialog</string>
+    <string name="newPassLabel">new password</string>
+    <string name="confirmPassLabel">confirm new password</string>
+    <string name="badPass">old password error</string>
+    <string name="label_puk2_code" msgid="302845876240219560"></string>
+    <string name="mismatchPin2">Password set error, please set again</string>
+    <string name="invalidPin2">input password (11 characters length permitted)</string>
+    <string name="port_setting">port setting</string>
+    <string name="default_21">default 21</string>
+    <string name="default_account">default radio</string>
+    <string name="default_pass">default 123456</string>
+    <string name="default_path">default /data</string>
+    <string name="new_mount">new share</string>
+    <string name="account_n_empty">please input account</string>
+    <string name="share_file_name">share file name</string>
+    <string name="share_directory">share directory</string>
+    <string name="share_file_per">share file permissions</string>
+    <string name="share_dir_per">share directory permissions</string>
+    <string name="set_name">account</string>
+    <string name="okBut">ok</string>
+    <string name="cancelBut">cancel</string>
+    <string name="all_share">all_share</string>
+
+    <!-- image -->
+    <string name="set_screen">Image settings</string>
+    <string name="set_hue">Chroma</string>
+    <string name="set_contrast">Contrast</string>
+    <string name="set_saturation">Saturation</string>
+    <string name="tv">tv</string>
+    <string name="pc">pc</string>
+    <!-- px -->
+    <string name="set_video_tv_label">Custom display format</string>
+
+    <!-- television aspect ratio -->
+    <string name="video_ratio">Video aspect ratio</string>
+    <!-- maintain aspect ratio -->
+    <string name="video_cvrs">Maintain aspect ratio</string>
+    <!-- whether we will enable hiplayer -->
+    <string name="media_player">Media Player Option</string>
+    <!-- Whether output format adaption is enabled or not for 2D stream -->
+    <string name="output_format_adaption">Output format adaption for 2D stream</string>
+    <string name="output_format_adaption_summaryOn">Enabled</string>
+    <string name="output_format_adaption_summaryOff">Disabled</string>
+
+    <string name="display_settiongs_statusbar">Hide StatusBar</string>
+    <string name="display_settiongs_statusbar_restart">Please restart system</string>
+    <string name="sure">OK</string>
+
+    <!-- System update -->
+    <string name="n_update_f">No upgrade package</string>
+    <string name="sdcard_no_mount">Sdcard not mount</string>
+    <string name="upgrade_dialog_summary">Are you sure you want to upgrade?</string>
+
+    <!-- samba setting -->
+    <string name="edt_empty_hint"> cannot be empty</string>
+    <string name="add_successfully">add successfully</string>
+    <string name="start_service_successfully">start successfully</string>
+    <string name="stop_service_successfully">stop successfully</string>
+    <string name="start_service_fail">start failed</string>
+    <string name="stop_service_fail">stop failed</string>
+    <string name="batch_del_title">delete dialog</string>
+    <string name="prefs_title">delete shares</string>
+    <string name="delete_share_success">shares deleted successfully</string>
+    <string name="delete_error">delete error</string>
+    <string name="edit_share_info">edit share</string>
+    <string name="edit_successfully">edit successfully</string>
+    <string name="edit_failed">edit failed</string>
+    <string name="null_share_dir">no head informations</string>
+    <string name="dir_already_exists">share file has already existed</string>
+    <string name="share_edit_title">share edit dialog</string>
+    <string name="preference_set_success">%1$s set successfully</string>
+    <string name="preference_set_failed">%1$s set failed</string>
+    <string name="default_workgroup">WORKGROUP</string>
+    <string name="default_server_mode">user</string>
+    <string name="default_log_num">100</string>
+    <string name="default_server_info">Hi3716C</string>
+    <string name="content_format_error">content can just be digits</string>
+    <string name="samba_setting_title">Samba Server Setting</string>
+
+    <!-- ftp setting -->
+    <string name="ftp_setting_title">Ftp Server Setting</string>
+    <string name="localtime_prefs">use local time</string>
+    <string name="listen_port">port</string>
+
+    <!-- nfs setting -->
+    <string name="nfs_setting_title">Nfs Server Setting</string>
+    <string name="look_nfs_client_infos">client information</string>
+    <string name="check_client_infos">view client informations</string>
+    <string name="add_new_share">add new share</string>
+    <string name="del_one_share">delete shares</string>
+    <string name="show_infos_dlg_title">%1$s in total</string>
+    <string name="no_client_mount_infos">no client mount informations</string>
+    <string name="show_ip">ip:</string>
+    <string name="show_dir">directory:</string>
+    <string name="add_new_share_ip">Input Client Address</string>
+    <string name="add_new_share_directory">Input directory path</string>
+    <string name="add_share_dlg_title">New Share Dialog</string>
+    <string name="input_ip_empty">ip address cannot be empty</string>
+    <string name="ip_format_error">ip format error</string>
+    <string name="input_dir_empty">directory cannot be empty</string>
+    <string name="delete_share_title">Delete Dialog</string>
+    <string name="no_item_selected">No Item Selected</string>
+    <string name="nfs_share_existed">share directory has already existed</string>
+    <string name="init_no_password">No password when first used, need be set</string>
+    <string name="server_can_empty">(If client address is empty, indicate that all can
+        access)</string>
+    <string name="share_dir_hint">128 characters length permitted(just
+        number,_,character)</string>
+    <string name="registered_share_dir_chars">_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="input_char_unvalidate">Input char must be number, underline, lower or upper character</string>
+    <string name="name_len_hint">128 characters length permitted</string>
+    <string name="net_bois_name">NetBIOS Name of Host</string>
+    <string name="net_host_name">Host Name</string>
+    <string name="net_name_different">Host name differs from each other</string>
+    <string name="net_bios_hint">10 characters length permitted(just number,_
+        ,character)</string>
+    <string name="pwd_empty_hint">password cannot be empty</string>
+    <string name="default_share_path">/sdcard</string>
+    <string name="xxx_not_empty_hint">%1$s can not be empty</string>
+    <string name="add_fail">Add Failed</string>
+    <string name="edit_dlg_title">Edit Dialog</string>
+    <string name="ftp_default_user">haisi</string>
+    <string name="ftp_default_path">/data</string>
+    <string name="ftp_default_port">21</string>
+    <string name="default_radio">radio</string>
+    <string name="default_net_bios">player</string>
+    <string name="enable_password">Use password for protection</string>
+    <string name="enpwd_summary">protect share when enable password</string>
+    <string name="read_only_title">set to write</string>
+    <string name="xxx_set_success">set successfully</string>
+    <string name="nfs_folder">ServerFolder</string>
+    <string name="nfs_read_only">Disable modifying contents</string>
+    <string name="old_pass">old password</string>
+    <string name="input_old_pass">input the old password</string>
+    <string name="nfs_mount_title">UNIX Mount directory tips</string>
+    <string name="nfs_mount_notify">mount -t nfs -o nolock,udp,nfsvers=2 ip:/serverFolder localFolder</string>
+    <string name="ftp_user_name_1">Anonymous</string>
+    <string name="ftp_user_name_2">admin</string>
+    <string name="samba_user_name">administrator</string>
+    <string name="nfs_server_folder">/mnt</string>
+
+    <string name="storage_information">Detailed Information</string>
+    <string name="storage_information_summary">check equipment capacity</string>
+    <!-- output mode -->
+    <string name="output_port">Output Port</string>
+    <string name="output_machine_summary">Setting Audio Output Machine</string>
+    <!-- output mode -->
+    <string name="output_mode">Output Mode</string>
+
+    <string name="output_down">HBR Degrade</string>
+
+    <!-- hdmi output -->
+    <string name="hdmi_output">HDMI Output</string>
+    <string name="bluelight_output">HBR Degrade Output</string>
+    <!-- spdif mode -->
+    <string name="sdpif_output">SPDIF Output</string>
+    <string name="setting_volume_label">Volume Setting</string>
+    <string name="NetworkConnectRemind">Please Check your Network connection!</string>
+
+    <!-- dobly mode -->
+    <string name="dobly_drc">Dolby Night Mode</string>
+    <!-- Display settings -->
+    <skip />
+
+    <string name="media_settings">"Video Output"</string>
+
+    <!-- System update -->
+    <string name="upgrade_settings_title">System upgrade</string>
+
+    <!-- Title of the Wi-fi settings entry in the left top level menu -->
+    <string name="ethernet_advanced_titlebar">Advanced Ethernet</string>
+    <string name="left_top">left|top</string>
+    <string name="ok_str">OK Change Focus</string>
+    <string name="right_bottom">right|bottom</string>
+    <string name="file_check">CA Check</string>
+    <string name="file_checking">CA Checking</string>
+    <string name="file_check_success">CA Check Success</string>
+    <string name="file_check_failed">CA Check Failed</string>
+    <string name="default_external_storage_title">Default storage equipment</string>
+    <string name="default_info">default storage equipment</string>
+    <string name="default_warning_title">Take effect after the restart , reboot the system immediately?</string>
+    <string name="unmount_cancle">Cancle</string>
+    <string name="default_warning_enter">Enter</string>
+
+    <!-- add ipv6 info  -->
+    <string name="ipv6_disable">Disable</string>
+    <string name="display_ipv6">Ipv6</string>
+    <string name="ipv6">Ipv6 Settings</string>
+    <string name="ipv6_enable">Enable</string>
+    <string name="ipv6_connect">Connected</string>
+    <string name="ipv6_connecting">Connecting......</string>
+    <string name="ipv6_connect_failed">Connect Failed !</string>
+    <string name="ipv6_connect_failed_auto">Connect Failed ! Please wait to reconnect</string>
+    <string name="pppoe_auth_failed">Authentication Failed ! Please cheak the username and passwd</string>
+    <string name="ipv6_disconnect">DisConnected</string>
+    <string name="ipv6_disconnecting">DisConnecting......</string>
+    <string name="ipv6_disconnet_failed">DisConnected Failed !</string>
+    <!--option 60 -->
+    <string name="option">DHCP OPTION</string>
+    <string name="option_60">Option60</string>
+    <string name="option_125">Option125</string>
+    <string name="option_username">UserName</string>
+    <string name="option_pwd">PassWord</string>
+    <string name="option_button_ok">Save</string>
+    <string name="option_button_cancle">Cancle</string>
+    <string name="option_tips">Please input below information.</string>
+
+    <string name="ipv6_static">Static IP</string>
+    <string name="ipv6_dhcp">DHCP</string>
+    <string name="ipv6_ip">IP</string>
+    <string name="ipv6_ip_txt">IP</string>
+    <string name="ipv6_gateway_txt">Gateway</string>
+    <string name="ipv6_prefix_length_txt">Prefix Length</string>
+    <string name="ipv6_dns">DNS</string>
+    <string name="ipv6_dns2_txt">DNS2</string>
+    <string name="ipv6_dns1_txt">DNS1</string>
+
+    <string name="auto_reconnect">Auto Reconnect</string>
+    <string name="net_auto_reconnect">NETWORK AUTO RECONNECT</string>
+    <string name="user_info">USER INFO</string>
+    <string name="option_save">Save</string>
+    <string name="auto_reconnecting">Reconnecting...</string>
+
+        <!-- 3G Setting -->
+    <string name="third_gen_settings_title">3G</string>
+    <string name="third_gen_disable">Disable</string>
+    <string name="third_gen_enable">Enable</string>
+    <string name="third_gen_connected">Connected</string>
+    <string name="third_gen_insert_card">Please insert 3G card</string>
+    <string name="third_gen_connecting">Connecting......</string>
+    <string name="third_gen_connect_failed">Connect Failed !</string>
+    <string name="third_gen_disconnect">Disconnected</string>
+    <string name="third_gen_disconnecting">Disconnecting......</string>
+    <string name="third_gen_disconnet_failed">DisConnected Failed !</string>
+    <string name="third_gen_cancel">Disconnected</string>
+    <string name="third_gen_link_down">link down</string>
+    <string name="third_gen_wrong_passwd">Wrong Passwd</string>
+
+    <string name="connection_mode_category_title">CONNECTION MODE</string>
+    <string name="connection_mode_auto">Auto</string>
+    <string name="connection_mode_custom">Custom</string>
+    <string name="access_point_category_title">ACCESS POINT</string>
+    <string name="module_type_category_title">Module Type</string>
+    <string name="ip_address_category_title">IP AddRESS</string>
+    <string name="access_point">Access Point</string>
+    <string name="third_gen_apn_name">APN NAME</string>
+    <string name="third_gen_ip_address">IP ADDRESS</string>
+    <string name="third_gen_dial_number">DIAL NUMBER</string>
+    <string name="third_gen_pin_code">PIN CODE</string>
+    <string name="third_gen_user_name">USER NAME</string>
+    <string name="third_gen_user_password">USER PASSWORD</string>
+    <string name="third_gen_getting">Obtaining IP address\u2026</string>
+    <string name="third_gen_apn_name_txt">ApnName</string>
+    <string name="third_gen_access_point_txt">AccessPoint</string>
+    <string name="third_gen_dial_number_txt">DialNumber</string>
+    <string name="third_gen_pin_code_txt">PinCode</string>
+    <string name="third_gen_user_name_txt">UserName</string>
+    <string name="third_gen_user_password_txt">Password</string>
+</resources>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

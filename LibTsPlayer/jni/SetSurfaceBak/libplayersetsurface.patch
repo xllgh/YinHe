@@ -1,0 +1,126 @@
+diff --git include/surfaceflinger/IGraphicBufferAlloc.h include/surfaceflinger/IGraphicBufferAlloc.h
+index d3b2062..e5fcaf5 100644
+--- include/surfaceflinger/IGraphicBufferAlloc.h
++++ include/surfaceflinger/IGraphicBufferAlloc.h
+@@ -37,7 +37,7 @@ public:
+     /* Create a new GraphicBuffer for the client to use.
+      */
+     virtual sp<GraphicBuffer> createGraphicBuffer(uint32_t w, uint32_t h,
+-            PixelFormat format, uint32_t usage, status_t* error) = 0;
++            int32_t format, uint32_t usage, status_t* error) = 0;
+ };
+ 
+ // ----------------------------------------------------------------------------
+diff --git include/surfaceflinger/ISurfaceComposer.h include/surfaceflinger/ISurfaceComposer.h
+index 432aaaf..72ddf72 100755
+--- include/surfaceflinger/ISurfaceComposer.h
++++ include/surfaceflinger/ISurfaceComposer.h
+@@ -126,7 +126,7 @@ public:
+      */
+     virtual status_t captureScreen(DisplayID dpy,
+             sp<IMemoryHeap>* heap,
+-            uint32_t* width, uint32_t* height, PixelFormat* format,
++            uint32_t* width, uint32_t* height, int32_t* format,
+             uint32_t reqWidth, uint32_t reqHeight,
+             uint32_t minLayerZ, uint32_t maxLayerZ) = 0;
+ 
+diff --git include/surfaceflinger/ISurfaceComposerClient.h include/surfaceflinger/ISurfaceComposerClient.h
+index 02cabc1..9065059 100644
+--- include/surfaceflinger/ISurfaceComposerClient.h
++++ include/surfaceflinger/ISurfaceComposerClient.h
+@@ -57,7 +57,7 @@ public:
+                                         DisplayID display,
+                                         uint32_t w,
+                                         uint32_t h,
+-                                        PixelFormat format,
++                                        int32_t format,
+                                         uint32_t flags) = 0;
+ 
+     /*
+diff --git include/surfaceflinger/Surface.h include/surfaceflinger/Surface.h
+index 6c753f3..bcaa63b 100755
+--- include/surfaceflinger/Surface.h
++++ include/surfaceflinger/Surface.h
+@@ -118,7 +118,7 @@ public:
+         uint32_t    h;
+         uint32_t    s;
+         uint32_t    usage;
+-        PixelFormat format;
++        int32_t format;
+         void*       bits;
+         uint32_t    reserved[2];
+     };
+diff --git include/ui/GraphicBuffer.h include/ui/GraphicBuffer.h
+index 6ab01f4..666b5af 100644
+--- include/ui/GraphicBuffer.h
++++ include/ui/GraphicBuffer.h
+@@ -70,10 +70,10 @@ public:
+     GraphicBuffer();
+ 
+     // creates w * h buffer
+-    GraphicBuffer(uint32_t w, uint32_t h, PixelFormat format, uint32_t usage);
++    GraphicBuffer(uint32_t w, uint32_t h, int32_t format, uint32_t usage);
+ 
+     // create a buffer from an existing handle
+-    GraphicBuffer(uint32_t w, uint32_t h, PixelFormat format, uint32_t usage,
++    GraphicBuffer(uint32_t w, uint32_t h, int32_t format, uint32_t usage,
+             uint32_t stride, native_handle_t* handle, bool keepOwnership);
+ 
+     // create a buffer from an existing ANativeWindowBuffer
+@@ -86,10 +86,10 @@ public:
+     uint32_t getHeight() const          { return height; }
+     uint32_t getStride() const          { return stride; }
+     uint32_t getUsage() const           { return usage; }
+-    PixelFormat getPixelFormat() const  { return format; }
++    int32_t getPixelFormat() const  { return format; }
+     Rect getBounds() const              { return Rect(width, height); }
+     
+-    status_t reallocate(uint32_t w, uint32_t h, PixelFormat f, uint32_t usage);
++    status_t reallocate(uint32_t w, uint32_t h, int32_t f, uint32_t usage);
+ 
+     status_t lock(uint32_t usage, void** vaddr);
+     status_t lock(uint32_t usage, const Rect& rect, void** vaddr);
+@@ -131,7 +131,7 @@ private:
+     GraphicBuffer& operator = (const GraphicBuffer& rhs);
+     const GraphicBuffer& operator = (const GraphicBuffer& rhs) const;
+ 
+-    status_t initSize(uint32_t w, uint32_t h, PixelFormat format, 
++    status_t initSize(uint32_t w, uint32_t h, int32_t format, 
+             uint32_t usage);
+ 
+     void free_handle();
+diff --git include/ui/PixelFormat.h include/ui/PixelFormat.h
+index 848c5a1..dbc5885 100644
+--- include/ui/PixelFormat.h
++++ include/ui/PixelFormat.h
+@@ -74,7 +74,7 @@ enum {
+     // pixelflinger/format.h
+ };
+ 
+-typedef int32_t PixelFormat;
++//typedef int32_t PixelFormat;
+ 
+ struct PixelFormatInfo
+ {
+@@ -105,7 +105,7 @@ struct PixelFormatInfo
+         return (ci <= 3) ? (cinfo[ci].h - cinfo[ci].l) : 0;
+     }
+     size_t      version;
+-    PixelFormat format;
++    int32_t format;
+     size_t      bytesPerPixel;
+     size_t      bitsPerPixel;
+     union {
+@@ -128,9 +128,9 @@ struct PixelFormatInfo
+ 
+ // Consider caching the results of these functions are they're not
+ // guaranteed to be fast.
+-ssize_t     bytesPerPixel(PixelFormat format);
+-ssize_t     bitsPerPixel(PixelFormat format);
+-status_t    getPixelFormatInfo(PixelFormat format, PixelFormatInfo* info);
++ssize_t     bytesPerPixel(int32_t format);
++ssize_t     bitsPerPixel(int32_t format);
++status_t    getPixelFormatInfo(int32_t format, PixelFormatInfo* info);
+ 
+ }; // namespace android
+ 

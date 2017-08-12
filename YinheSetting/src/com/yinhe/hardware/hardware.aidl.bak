@@ -1,0 +1,8 @@
+package com.yinhe.hardware;
+
+interface Hardware{
+//AUDIO SETTINGS
+void int setAudioOutput(int port,int mode);
+
+
+}

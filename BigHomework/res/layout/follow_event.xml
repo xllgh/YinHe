@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/trans_gray" >
+
+        <TextView
+            android:id="@+id/serverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serverName"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s_s" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serverName"
+            android:layout_toRightOf="@id/time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s_s" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/trans_gray" >
+
+        <TextView
+            android:id="@+id/serverName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serverName2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s_s" />
+
+        <TextView
+            android:id="@+id/duration2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serverName2"
+            android:layout_toRightOf="@id/time2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_s_s" />
+    </RelativeLayout>
+
+</LinearLayout>

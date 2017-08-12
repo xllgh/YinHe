@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:text="@string/route_set_awifi_ssid" />
+
+        <EditText
+            android:id="@+id/et_route_set_awifi_ssid"
+            style="@style/txt_nw_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:text="@string/route_set_awifi_pwd" />
+
+        <EditText
+            android:id="@+id/et_route_set_awifi_pwd"
+            style="@style/txt_nw_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:text="@string/route_set_awifi_name" />
+
+        <EditText
+            android:id="@+id/et_route_set_awifi_name"
+            style="@style/txt_nw_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:text="@string/route_set_awifi_channel" />
+
+        <EditText
+            android:id="@+id/et_route_set_awifi_channel"
+            style="@style/txt_nw_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/btn_confirm"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sure_cancel"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/btn_confirm"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_sure_cancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_network_info_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/detecting"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_network_info_label"
+        style="@style/txt_network_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_network_info_state"
+        android:gravity="fill_horizontal"
+        android:text="@string/network_type" />
+
+    <TextView
+        android:id="@+id/tv_network_info_content"
+        style="@style/txt_network_info_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/tv_network_info_label"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical|right"
+        android:text="@string/router_test" />
+
+</RelativeLayout>

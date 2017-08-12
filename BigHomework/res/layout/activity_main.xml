@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:divider="@null"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_item_select"
+        android:layout_weight="1.5" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/imageView"
+            android:background="@drawable/play"
+            android:layout_margin="10dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

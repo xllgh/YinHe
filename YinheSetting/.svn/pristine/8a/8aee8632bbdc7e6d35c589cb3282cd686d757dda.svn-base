@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/logo" />
+
+    <FrameLayout
+        android:layout_width="936dip"
+        android:layout_height="550dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dip" >
+
+        <FrameLayout
+            android:id="@+id/fl_net_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="60dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/fl_display_and_sound"
+            android:nextFocusUp="@+id/fl_senior_set" >
+
+            <ImageView
+                android:id="@+id/iv_net_information"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_netinfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/net_information"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_wire_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="60dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/fl_display_and_sound"
+            android:nextFocusUp="@+id/fl_senior_set"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_wire_access"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/wire_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/wired_connect"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <!-- 无线接入 -->
+
+        <FrameLayout
+            android:id="@+id/fl_wireless_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="334dip"
+            android:layout_marginTop="60dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusUp="@+id/fl_version_infor"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_wireless_access"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/wireless_connect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/wireless_connect"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_router_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="334dip"
+            android:layout_marginTop="60dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusUp="@+id/fl_version_infor" >
+
+            <ImageView
+                android:id="@+id/iv_router_setting"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_router" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/route_settings"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_display_and_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="608dip"
+            android:layout_marginTop="60dip"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusRight="@id/fl_wire_connect"
+            android:nextFocusUp="@+id/fl_apache_infor" >
+
+            <ImageView
+                android:id="@+id/iv_display_and_sound"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/sound_display" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/sound_and_display"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_senior_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="260dip"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/fl_wire_connect"
+            android:nextFocusLeft="@id/fl_apache_infor" >
+
+            <ImageView
+                android:id="@+id/iv_senior_set"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/senior_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/senor_setting"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_version_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="334dip"
+            android:layout_marginTop="260dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/fl_wireless_access" >
+
+            <ImageView
+                android:id="@+id/iv_version_infor"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/system_version_infor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:contentDescription="@null"
+                android:text="@string/system_ven_infor"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_apache_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="608dip"
+            android:layout_marginTop="260dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@id/fl_display_and_sound"
+            android:nextFocusRight="@id/fl_senior_set" >
+
+            <ImageView
+                android:id="@+id/iv_apache_infor"
+                android:layout_width="268dip"
+                android:layout_height="194dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/network_info" />
+
+            <TextView
+                android:id="@+id/tv_apache_infor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="118dip"
+                android:text="@string/network_info"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <!-- 倒影 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="457dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_reflect_senior_set"
+                android:layout_width="268dip"
+                android:layout_height="90dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_reflect_version_infor"
+                android:layout_width="268dip"
+                android:layout_height="90dip"
+                android:layout_marginLeft="6dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_reflect_apache_infor"
+                android:layout_width="268dip"
+                android:layout_height="90dip"
+                android:layout_marginLeft="6dip"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/white_boder"
+            android:layout_width="418dip"
+            android:layout_height="332dip"
+            android:background="@drawable/desktop_item_focused"
+            android:contentDescription="@null"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

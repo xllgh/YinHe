@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/address_01"
+        style="@style/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_input_bg"
+        android:clickable="true"
+        android:digits="0123456789."
+        android:ems="3"
+        android:focusable="true"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textColorHighlight="@color/blue" />
+
+    <EditText
+        android:id="@+id/address_02"
+        style="@style/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_input_bg"
+        android:clickable="true"
+        android:digits="0123456789."
+        android:ems="3"
+        android:focusable="true"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textColorHighlight="@color/blue" />
+
+    <EditText
+        android:id="@+id/address_03"
+        style="@style/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_input_bg"
+        android:clickable="true"
+        android:digits="0123456789."
+        android:ems="3"
+        android:focusable="true"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textColorHighlight="@color/blue" />
+
+    <EditText
+        android:id="@+id/address_04"
+        style="@style/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_input_bg"
+        android:clickable="true"
+        android:digits="0123456789."
+        android:ems="3"
+        android:focusable="true"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textColorHighlight="@color/blue" />
+
+</LinearLayout>

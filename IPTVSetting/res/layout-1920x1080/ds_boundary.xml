@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_boundary"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/lv_boundary"
+        android:nextFocusLeft="@+id/lv_boundary"
+        android:nextFocusRight="@+id/lv_boundary"
+        android:nextFocusUp="@+id/title_boundary"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

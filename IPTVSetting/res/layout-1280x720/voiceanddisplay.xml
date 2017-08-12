@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+    
+    <include layout="@layout/logo" />
+
+    <TextView
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/displayandvoice" />
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/itv_voice_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_video"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@+id/title_hdmi"
+                android:text="@string/title_video" />
+
+            <TextView
+                android:id="@+id/title_boundary"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:text="@string/title_boundary" />
+
+            <TextView
+                android:id="@+id/title_screendisplay"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:text="@string/title_screendisplay" />
+
+            <TextView
+                android:id="@+id/title_hont"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:text="@string/title_hont" />
+
+            <TextView
+                android:id="@+id/title_hdmi"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:nextFocusRight="@+id/title_video"
+                android:nextFocusUp="@+id/h"
+                android:text="@string/title_hdmi" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mFrameLayout"
+            android:layout_width="825dip"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

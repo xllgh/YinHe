@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.yinhe.bighomword.ScanActivity$PlaceholderFragment" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:listSelector="@drawable/selector_focus_common" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7" >
+
+                <SurfaceView
+                    android:id="@+id/surfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    layout="@layout/follow_event"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/eventListView"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/trans_gray"
+                    android:listSelector="@drawable/selector_focus_common"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/msgPromt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@color/trans_gray"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textNormal"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/play" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/pserverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+
+                    <TextView
+                        android:id="@+id/ptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pserverName"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+
+                    <TextView
+                        android:id="@+id/pEndtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ptime"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/fserverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+
+                    <TextView
+                        android:id="@+id/ftime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fserverName"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+
+                    <TextView
+                        android:id="@+id/fEndtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ftime"
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_s_s" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownSelector="@drawable/selector_focus_common" />
+
+            <ProgressBar
+                android:id="@+id/epgProgress"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/ecgInfoList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@drawable/selector_focus_common" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

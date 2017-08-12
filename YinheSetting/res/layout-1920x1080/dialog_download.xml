@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/bg_dialog_download"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        style="@style/txt_network_info_content"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_file_size"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_total_size"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_downloaded_size"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_size"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_realtime_speed"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_real_time_speed"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_max_speed"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_max_speed"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_min_speed"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_min_speed"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/download_average_speed"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/tv_download_average_speed"
+            style="@style/txt_network_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_download_path"
+        style="@style/txt_network_info_editor"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_download_file_name"
+        style="@style/txt_network_info_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_update_common"
+        android:selectAllOnFocus="true"
+        android:text="@string/btn_cancel" />
+
+</LinearLayout>

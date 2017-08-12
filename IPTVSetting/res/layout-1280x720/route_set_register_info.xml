@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_register_info_state" />
+
+        <TextView
+            android:id="@+id/txt_register_info_state"
+            style="@style/txt_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_register_info_gw_mac" />
+
+        <TextView
+            android:id="@+id/txt_register_info_gw_mac"
+            style="@style/txt_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_register_info_gw_address" />
+
+        <TextView
+            android:id="@+id/txt_register_info_gw_address"
+            style="@style/txt_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:nextFocusDown="@+id/et_route_password_old"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_register_info_gw_port" />
+
+        <TextView
+            android:id="@+id/txt_register_info_gw_port"
+            style="@style/txt_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:nextFocusDown="@+id/et_route_password_old"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_register_info_soft_ver" />
+
+        <TextView
+            android:id="@+id/txt_register_info_soft_ver"
+            style="@style/txt_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:nextFocusDown="@+id/et_route_password_old"
+            android:singleLine="true"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        style="@style/btn_confirm"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/button_sure_cancel"
+        android:text="@string/refresh" />
+
+</LinearLayout>

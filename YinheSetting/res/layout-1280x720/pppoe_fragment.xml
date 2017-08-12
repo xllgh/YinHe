@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pppoe_status"
+        style="@style/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="15dip"
+        android:ems="10"
+        android:text="@string/pppoe_connect"
+        android:textIsSelectable="false" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:ems="9"
+            android:text="@string/user_name" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:ems="12"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/et_user_name"
+            android:nextFocusRight="@id/et_user_name"
+            android:nextFocusUp="@+id/tv_PPPOE"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:ems="9"
+            android:text="@string/net_password" />
+
+        <EditText
+            android:id="@+id/et_net_password"
+            style="@style/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:ems="12"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:nextFocusLeft="@id/et_net_password"
+            android:nextFocusRight="@id/et_net_password"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_sure"
+            style="@style/btn_confirm"
+            android:layout_width="110dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_sure_cancle"
+            android:nextFocusDown="@+id/tv_PPPOE"
+            android:nextFocusLeft="@+id/tv_PPPOE"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/bt_canle"
+            style="@style/btn_confirm"
+            android:layout_width="110dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="153dip"
+            android:background="@drawable/button_sure_cancle"
+            android:nextFocusDown="@+id/tv_PPPOE"
+            android:nextFocusRight="@+id/tv_PPPOE"
+            android:text="@string/cancle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/disconnect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="60dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_connected"
+            style="@style/btn_confirm"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dip"
+            android:background="@drawable/button_sure_cancle"
+            android:nextFocusDown="@+id/tv_PPPOE"
+            android:nextFocusLeft="@+id/tv_PPPOE"
+            android:nextFocusRight="@+id/tv_PPPOE"
+            android:text="@string/disconnect" />
+    </LinearLayout>
+
+</LinearLayout>

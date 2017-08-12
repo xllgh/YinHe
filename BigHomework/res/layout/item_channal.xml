@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape_item_frame"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textNormal" />
+
+    <TextView
+        android:id="@+id/channal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:ellipsize="marquee"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/index"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textNormal" />
+    
+   <TextView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_below="@id/channal"
+       android:id="@+id/frequency"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_s_s"
+       
+       />
+
+</RelativeLayout>

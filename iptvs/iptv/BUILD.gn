@@ -1,0 +1,78 @@
+# Copyright 2014 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/config/android/rules.gni")
+
+android_library("content_iptv_java") {
+  java_files = [
+    "java/src/com/yinhe/android/iptv/STBAppManagerCTC.java",
+    "java/src/com/yinhe/android/iptv/AuthenticationCTC.java",
+    "java/src/com/yinhe/android/iptv/UtilityCTC.java",
+    "java/src/com/yinhe/android/iptv/MediaPlayerCTC.java",
+    "java/src/com/yinhe/android/iptv/DeviceCallback.java",
+    "java/src/com/yinhe/android/iptv/KeeperClient.java",
+    "java/src/com/yinhe/android/iptv/HttpPlayer.java",
+    "java/src/com/yinhe/android/iptv/HTMLObjectElement.java",
+  ]
+  
+  deps = [
+    "//base:base_java",
+  ]
+  
+  srcjar_deps = [
+    ":content_iptv_aidl",
+  ]
+}
+
+android_aidl("content_iptv_aidl") {
+  interface_file = "java/src/com/android/settings/keeper/content_iptv.aidl"
+  sources = [
+    "java/src/com/android/settings/keeper/KeeperAidl.aidl",
+  ]
+}
+
+generate_jni("content_iptv_jni_headers") {
+  jni_package = "content/iptv"
+  sources = [
+    "java/src/com/yinhe/android/iptv/STBAppManagerCTC.java",
+    "java/src/com/yinhe/android/iptv/AuthenticationCTC.java",
+    "java/src/com/yinhe/android/iptv/UtilityCTC.java",
+    "java/src/com/yinhe/android/iptv/MediaPlayerCTC.java",
+    "java/src/com/yinhe/android/iptv/DeviceCallback.java",
+    "java/src/com/yinhe/android/iptv/HTMLObjectElement.java",
+  ]
+}
+
+static_library("content_iptv_jni_lib") {
+  sources = [
+    "STBAppManagerCTC.cc",
+    "STBAppManagerCTC.h",
+    "AuthenticationCTC.cc",
+    "AuthenticationCTC.h",
+    "EthernetList.cc",
+    "EthernetList.h",
+    "HTMLObjectElement.cc",
+    "HTMLObjectElement.h",
+    "device_interface.cc",
+    "device_interface.h",
+    "device_library_function.cc",
+    "device_library_function.h",
+    "UtilityCTC.cc",
+    "UtilityCTC.h",
+    "MediaPlayerCTC.cc",
+    "MediaPlayerCTC.h",
+    "MediaProcessor_interface.cc",
+    "MediaProcessor_interface.h",
+    "MediaProcessor_library_function.cc",
+    "MediaProcessor_library_function.h",
+    "device_callback.cc",
+    "device_callback.h",
+    "iptv_keycode_define.h",
+  ]
+
+  deps = [
+    ":content_iptv_jni_headers",
+    "//base",
+  ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WatchTV:)</string>
+    <string name="appName">week影音</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="yinhe">视频指南</string>
+    <string name="connectFailed">该频道信号异常，可以观看其他频道哦。。。</string>
+    <string name="eitFailed">该频道信号异常，不可以获取节目预告信息哦。。。</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="frequentPrompt">请输入频点，默认频点443000</string>
+    <string name="scanManual">手动搜索</string>
+    <string name="scanAuto">自动搜索</string>
+    <string name="scanStop">停止</string>
+    <string name="unkown">未知节目</string>
+    <string name="prompt">提示</string>
+    <string name="quitApp">真的要退出应用吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="search">节目搜索</string>
+    <string name="paramError">节目参数异常</string>
+    <string name="initPlayerError">初始化播放器异常</string>
+    <string name="tvAudioPid">音频 Pid： %1$s</string>
+    <string name="tvAudioDecoder">音频 decoder:%1$s</string>
+    <string name="tvVideoPid">视频  Pid：%1$S</string>
+    <string name="tvVideoDecoder">视频  decoder：%1$S</string>
+    <string name="tvPercent">%1$S </string>
+    <string name="tvFrequency">频率：%1$S</string>
+    <string name="tvSymbolRate">符号率：%1$S</string>
+    <string name="timeFomart">yyyy-MM-dd HH:mm:ss</string>
+    <string name="dateFormat">yyyy-MM-dd</string>
+    <string name="progressTime">mm:ss</string>
+    <string name="scanNoFrequency">没有搜索到频点，请检查信号线和机顶是否正常工作</string>
+    <string name="playTime">开始：%1$S</string>
+    <string name="playEndtime">结束：%1$S</string>
+    <string name="noEventInfo">暂时没有节目预告信息</string>
+    <string name="eventDefault">已播出为准</string>
+
+</resources>

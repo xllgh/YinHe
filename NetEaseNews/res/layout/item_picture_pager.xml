@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/selector_focus_common"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+<!--   android:background="@drawable/selector_picture_indicator" -->
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvIntroduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom|left"
+        android:text="@string/test"
+        android:visibility="gone" />
+
+</RelativeLayout>

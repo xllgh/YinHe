@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="ethernet_settings_title">有线网络</string>
+    <!-- Ethernet configuration dialog -->
+    <string name="eth_con_type_dhcp">自动获取IP地址</string>
+    <string name="eth_con_type_manual">手动设置IP地址</string>
+    <string name="eth_con_type_pppoe">拨号连接</string>
+    <string name="eth_ipaddr">IP 地址</string>
+    <string name="eth_static_cfg">静态网络配置</string>
+    <string name="eth_mask">子网掩码</string>
+    <string name="eth_gw">网 关</string>
+    <string name="eth_dns">DNS</string>
+    <string name="eth_dns1">DNS1</string>
+    <string name="eth_dns2">DNS2</string>
+    <string name="eth_mac">网卡物理地址</string>
+    <string name="eth_dhcp_successed">已连接</string>
+    <string name="eth_dhcp_cancel">已断开连接</string>
+    <string name="eth_dhcp_failed">失败</string>
+    <string name="eth_dhcp_getting">正在获取 IP 地址...</string>
+    <string name="eth_static_getting">正在连接...</string>
+    <string name="eth_phy_link_down">网线未连接</string>
+    <string name="eth_phy_link_up">网线已连接</string>
+    <string name="eth_phy_link_down_check">网线已断开,请连接网线</string>
+    <string name="eth_static_connect">已连接</string>
+    <string name="eth_static_disconnecting">正在断开连接...</string>
+    <string name="eth_static_disconnect_successed">已断开连接</string>
+    <string name="eth_disconected">失败</string>
+    <string name="network_interface">网口列表</string>
+    <string name="network_cable0">网口 0</string>
+    <string name="network_cable1">网口 1</string>
+    <string name="wifi_disguise">WiFi 伪装</string>
+    <string name="button_ok">确定</string>
+    <string name="check_ip">请输入有效IP</string>
+
+    <!-- begin  pppoe network add by lWX146298 -->
+    <string name="pppoe_setting">Pppoe拨号设置</string>
+    <string name="ethernet_advanced_titlebar">高级有线网络设置</string>
+    <string name="pppoe_disconnect">未连接</string>
+    <string name="pppoe_connect">已连接</string>
+    <string name="pppoe_connecting">连接中......</string>
+    <string name="pppoe_connect_error">用户名或密码错误</string>
+    <string name="pppoe_connect_falied">连接失败</string>
+    <string name="pppoe_connect_timeout">连接超时</string>
+    <string name="local_network_category_title">本地网络连接设置</string>
+    <string name="pppoe_category_title">Pppoe网络连接设置</string>
+    <string name="pppoe_switch_info">Pppoe已启用，切换会断开Pppoe，确定要切换吗 </string>
+    <string name="pppoe_dialog_cannel">取消</string>
+    <string name="pppoe_dialog_disconnect">确认</string>
+    <string name="pppoe_disable">未启用</string>
+    <string name="pppoe_auto_reconnect_title">Pppoe自动重连</string>
+    <string name="pppoe_auto_reconnect_summary">Pppoe连接失败之后自动重连</string>
+
+    <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
+    <string name="header_category_wireless_netservice">网络共享服务设置</string>
+    <string name="netservice_settings_fragment_title">开启网络服务</string>
+    <string name="header_category_samba">SAMBA共享服务</string>
+    <string name="header_category_ftp">Ftp共享服务</string>
+    <string name="header_category_nfs">Nfs共享服务</string>
+    <string name="account">账号</string>
+    <string name="pass">密码</string>
+    <string name="start">开启</string>
+    <string name="stop">关闭</string>
+    <string name="global_element">设置全局参数</string>
+    <string name="server_info">服务器信息</string>
+    <string name="work_group">工作组</string>
+    <string name="log_count">Log条数</string>
+    <string name="serurity_level">安全等级</string>
+    <string name="down_setting">共享设置</string>
+    <string name="down_path">挂载路径</string>
+    <string name="file_right">挂载文件权限</string>
+    <string name="directory_right">挂载目录权限</string>
+    <string name="user_name">用户名</string>
+    <string name="pppoe_login">Pppoe拨号连接</string>
+    <string name="available_info">启用共享资源</string>
+    <string name="browseable_info">可见</string>
+    <string name="writable_info">可写</string>
+    <string name="default_0777">0777</string>
+    <string name="client_configuration">客户端配置</string>
+    <string name="login_setting">登录设置</string>
+    <string name="login_paths">登录路径</string>
+    <string name="local_setting">本地设置</string>
+    <string name="local_user">本地用户</string>
+    <string name="local_time">本地时间</string>
+    <string name="y_n_update_system">可修改服务器文件</string>
+    <string name="port">端口</string>
+    <string name="port_setting">端口设置</string>
+    <string name="default_21">默认 21</string>
+    <string name="record_info">记录使用者所以上传下载信息</string>
+    <string name="pass_dialog">密码对话框</string>
+    <string name="newPassLabel">新密码</string>
+    <string name="confirmPassLabel">确认新密码</string>
+    <string name="badPass">您输入的旧密码不正确，请重试。</string>
+    <string name="label_puk2_code">"输入 PUK2 码"</string>
+    <string name="mismatchPin2">您输入的密码与确认密码不匹配，请重设</string>
+    <string name="invalidPin2">输入密码（最多可输入11位）</string>
+    <string name="default_account">默认 radio</string>
+    <string name="default_pass">默认 123456</string>
+    <string name="default_path">默认 /data</string>
+    <string name="new_mount">新增共享</string>
+    <string name="account_n_empty">请输入帐号</string>
+    <string name="share_file_name">共享文件名</string>
+    <string name="share_directory">共享路径</string>
+    <string name="share_file_per">共享文件权限</string>
+    <string name="share_dir_per">共享目录权限</string>
+    <string name="set_name">账号</string>
+    <string name="okBut">确定</string>
+    <string name="cancelBut">取消</string>
+    <string name="all_share">所有共享</string>
+    <!-- samba setting -->
+    <string name="edt_empty_hint">不能为空</string>
+    <string name="add_successfully">增加成功</string>
+    <string name="start_service_successfully">开启成功</string>
+    <string name="stop_service_successfully">关闭成功</string>
+    <string name="start_service_fail">开启失败</string>
+    <string name="stop_service_fail">关闭失败</string>
+    <string name="batch_del_title">删除共享对话框</string>
+    <string name="prefs_title">删除共享</string>
+    <string name="delete_share_success">共享删除成功</string>
+    <string name="delete_error">删除失败</string>
+    <string name="edit_share_info">编辑共享</string>
+    <string name="edit_successfully">编辑成功</string>
+    <string name="edit_failed">编辑失败</string>
+    <string name="null_share_dir">无共享文件信息</string>
+    <string name="dir_already_exists">共享文件名已经存在</string>
+    <string name="share_edit_title">编辑共享对话框</string>
+    <string name="preference_set_success">%1$s设置成功</string>
+    <string name="preference_set_failed">%1$s设置失败</string>
+    <string name="default_workgroup">WORKGROUP</string>
+    <string name="default_server_mode">user</string>
+    <string name="default_log_num">100</string>
+    <string name="default_server_info">Hi3716C</string>
+    <string name="content_format_error">内容需要是数字</string>
+    <string name="samba_setting_title">Samba服务器设置</string>
+
+    <!-- ftp setting -->
+    <string name="ftp_setting_title">Ftp服务器设置</string>
+    <string name="localtime_prefs">本地时间</string>
+    <string name="listen_port">监听端口</string>
+
+    <!-- nfs setting -->
+    <string name="nfs_setting_title">nfs服务器设置</string>
+    <string name="look_nfs_client_infos">客户端信息</string>
+    <string name="check_client_infos">查看客户端信息</string>
+    <string name="add_new_share">新增共享</string>
+    <string name="del_one_share">删除共享</string>
+    <string name="show_infos_dlg_title">共有%1$s条信息</string>
+    <string name="no_client_mount_infos">没有客户端挂载信息</string>
+    <string name="show_ip">ip地址:</string>
+    <string name="show_dir">目录:</string>
+    <string name="add_new_share_ip">输入客户端地址</string>
+    <string name="add_new_share_directory">输入目录路径</string>
+    <string name="add_share_dlg_title">新增共享对话框</string>
+    <string name="input_ip_empty">ip地址不能为空</string>
+    <string name="ip_format_error">ip格式不正确</string>
+    <string name="input_dir_empty">目录路径不能为空</string>
+    <string name="delete_share_title">删除对话框</string>
+    <string name="no_item_selected">没有项目被选中</string>
+    <string name="nfs_share_existed">共享目录已经存在</string>
+    <string name="init_no_password">初始首次无密码,需设置</string>
+    <string name="server_can_empty">（若未输入客户端地址，表示对所有用户开放）</string>
+    <string name="share_dir_hint">最多可输入128个字符（只能输入：数字，_，字符）</string>
+    <string name="registered_share_dir_chars">_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="input_char_unvalidate">输入字符需要是数字，_，大小写字符</string>
+    <string name="name_len_hint">最多可输入128个字符</string>
+    <string name="net_bois_name">主机NetBIOS名称</string>
+    <string name="net_host_name">主机名称</string>
+    <string name="net_name_different">主机名均不相同</string>
+    <string name="net_bios_hint">最多可输入10个字符（只能输入：数字，_，字符）</string>
+    <string name="pwd_empty_hint">设置密码不能为空</string>
+    <string name="default_share_path">/sdcard</string>
+    <string name="xxx_not_empty_hint">%1$s不能为空</string>
+    <string name="add_fail">增加失败</string>
+    <string name="edit_dlg_title">编辑对话框</string>
+    <string name="ftp_default_user">haisi</string>
+    <string name="ftp_default_path">/data</string>
+    <string name="ftp_default_port">21</string>
+    <string name="default_radio">radio</string>
+    <string name="default_net_bios">player</string>
+    <string name="enable_password">使用密码保护</string>
+    <string name="enpwd_summary">启用密码保护共享</string>
+    <string name="read_only_title">读写设置</string>
+    <string name="xxx_set_success">设置成功</string>
+    <string name="nfs_folder">服务器目录</string>
+    <string name="nfs_read_only">不允许修改内容</string>
+    <string name="old_pass">旧密码</string>
+    <string name="input_old_pass">输入旧密码</string>
+    <string name="nfs_mount_title">UNIX挂载命令提示</string>
+    <string name="nfs_mount_notify">mount -t nfs -o nolock,udp,nfsvers=2 ip:/服务器目录 本地目录</string>
+    <string name="ftp_user_name_1">Anonymous</string>
+    <string name="ftp_user_name_2">admin</string>
+    <string name="samba_user_name">administrator</string>
+    <string name="nfs_server_folder">/mnt</string>
+
+    <!-- screen scope -->
+    <string name="screen_scope">显示区域设置</string>
+    <string name="set_scope_top">顶部偏移量</string>
+    <string name="set_scope_left">左边偏移量</string>
+    <string name="set_scope_width">右边偏移量</string>
+    <string name="set_scope_height">底部偏移量</string>
+    <string name="exit_ask">确定要切换吗</string>
+    <string name="info">提示</string>
+    <string name="scope_outside">屏幕超出范围</string>
+
+    <!-- television aspect ratio -->
+    <string name="video_ratio">视频宽高比</string>
+    <!-- maintain aspect ratio -->
+    <string name="video_cvrs">视频宽高比转换方式</string>
+    <string name="media_player">媒体播放器模式</string>
+    <!-- Whether output format adaption is enabled or not for 2D stream -->
+    <string name="output_format_adaption">2D码流输出制式自适应</string>
+    <string name="output_format_adaption_summaryOn">开启</string>
+    <string name="output_format_adaption_summaryOff">关闭</string>
+
+    <!-- image -->
+    <string name="set_screen">图像设置</string>
+    <string name="set_hue">色度</string>
+    <string name="set_contrast">对比度</string>
+    <string name="set_saturation">饱和度</string>
+    <string name="tv">tv</string>
+    <string name="pc">pc</string>
+    <string name="set_video_tv_label">"自定义显示制式"</string>
+    <!-- show statebar setting add by z00120637 -->
+    <string name="display_settiongs_statusbar">隐藏状态栏</string>
+    <string name="display_settiongs_statusbar_restart">请重启系统</string>
+    <string name="sure">确定</string>
+    <string name="n_update_f">没有升级包</string>
+    <string name="sdcard_no_mount">未挂载sdcard</string>
+    <string name="upgrade_dialog_summary">你确定要升级吗？</string>
+    <string name="upgrade_settings_title">系统升级</string>
+    <string name="media_settings">"视频输出"</string>
+    <string name="storage_information">详细信息</string>
+    <string name="storage_information_summary">查看设备容量</string>
+    <string name="output_port">输出端口</string>
+    <string name="output_machine_summary">设置音频输出设备</string>
+    <!-- output mode -->
+    <string name="output_mode">输出方式</string>
+    <string name="output_down">次世代音频降级输出</string>
+
+    <!-- hdmi output -->
+    <string name="hdmi_output">HDMI输出</string>
+    <!-- spdif mode -->
+    <string name="sdpif_output">SPDIF输出</string>
+    <string name="bluelight_output">次世代降级输出</string>
+    <!-- dobly mode -->
+    <string name="dobly_drc">杜比夜间模式</string>
+    <string name="setting_volume_label">声音设置</string>
+    <string name="NetworkConnectRemind">请查看你的网络连接</string>
+    <string name="left_top">左|上</string>
+    <string name="ok_str">OK切换焦点</string>
+    <string name="right_bottom">右|下</string>
+    <string name="file_check">安全校验</string>
+    <string name="file_checking">安全校验中</string>
+    <string name="file_check_success">安全校验成功</string>
+    <string name="file_check_failed">安全校验失败</string>
+
+    <!-- add ipv6 info  -->
+    <string name="ipv6_disable">未启用</string>
+    <string name="display_ipv6">Ipv6</string>
+    <string name="ipv6">Ipv6 设置</string>
+    <string name="ipv6_enable">启用</string>
+    <string name="ipv6_connect">已连接</string>
+    <string name="ipv6_connecting">连接中......</string>
+    <string name="ipv6_connect_failed">连接失败！</string>
+    <string name="ipv6_connect_failed_auto">连接失败！ 请等待重连。</string>
+    <string name="pppoe_auth_failed">认证失败，请检查用户名和密码！</string>
+    <string name="ipv6_disconnect">未连接</string>
+    <string name="ipv6_disconnecting">断开连接中......</string>
+    <string name="ipv6_disconnet_failed">断开连接失败！</string>
+    <string name="default_external_storage_title">指定默认存储设备</string>
+    <string name="default_info">当前默认存储设备</string>
+    <string name="default_warning_title">该操作重启后生效，是否马上重启系统？</string>
+    <string name="unmount_cancle">取消</string>
+    <string name="default_warning_enter">确定</string>
+
+    <string name="ipv6_ip">IP</string>
+    <string name="ipv6_ip_txt">IP</string>
+    <string name="ipv6_gateway_txt">网关</string>
+    <string name="ipv6_prefix_length_txt">前缀长度</string>
+    <string name="ipv6_dns">DNS</string>
+    <string name="ipv6_dns1_txt">DNS1</string>
+    <string name="ipv6_dns2_txt">DNS2</string>
+
+    <string name="auto_reconnect">自动重连</string>
+    <string name="net_auto_reconnect">网络自动重连</string>
+    <string name="option_save">保存</string>
+    <string name="auto_reconnecting">自动重连中。。。</string>
+    <!-- 3G Setting -->
+    <string name="third_gen_settings_title">3G</string>
+    <string name="third_gen_disable">Disable</string>
+    <string name="third_gen_enable">Enable</string>
+    <string name="third_gen_connected">网络已连接</string>
+    <string name="third_gen_insert_card">请插入3G卡</string>
+    <string name="third_gen_connecting">正在连接......</string>
+    <string name="third_gen_connect_failed">连接失败</string>
+    <string name="third_gen_disconnect">连接已断开</string>
+    <string name="third_gen_disconnecting">正在断开连接......</string>
+    <string name="third_gen_disconnet_failed">断开连接失败</string>
+    <string name="third_gen_link_down">连接断开</string>
+    <string name="third_gen_wrong_passwd">密码错误</string>
+
+    <string name="connection_mode_category_title">连接模式</string>
+    <string name="connection_mode_auto">自动连接</string>
+    <string name="connection_mode_custom">手动设置</string>
+    <string name="access_point_category_title">接入点</string>
+    <string name="module_type_category_title">设备类型</string>
+    <string name="ip_address_category_title">IP地址</string>
+    <string name="access_point">接入点</string>
+    <string name="third_gen_apn_name">APN</string>
+    <string name="third_gen_ip_address">IP 地址</string>
+    <string name="third_gen_dial_number">拨号号码</string>
+    <string name="third_gen_pin_code">PIN码</string>
+    <string name="third_gen_user_name">用户名</string>
+    <string name="third_gen_user_password">密码</string>
+    <string name="third_gen_getting">正在获取IP\u2026</string>
+    <string name="third_gen_apn_name_txt">APN</string>
+    <string name="third_gen_access_point_txt">接入点</string>
+    <string name="third_gen_dial_number_txt">拨号号码</string>
+    <string name="third_gen_pin_code_txt">PIN码</string>
+    <string name="third_gen_user_name_txt">用户名</string>
+    <string name="third_gen_user_password_txt">密码</string>
+</resources>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

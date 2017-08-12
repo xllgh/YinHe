@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="authentication">
+        <item>3DES+MD5</item>
+        <item>SHA-1</item>
+    </string-array>
+    <string-array name="boundary">
+        <item>左边界</item>
+        <item>右边界</item>
+        <item>上边界</item>
+        <item>下边界</item>
+    </string-array>
+    <string-array name="system_info">
+        <item>账号</item>
+        <item>设备名称</item>
+        <item>还原出厂状态</item>
+        <item>厂商名称</item>
+        <item>设备型号</item>
+        <item>设备序列号</item>
+        <item>MAC地址</item>
+        <item>安卓系统版本</item>
+        <item>软件版本</item>
+        <item>硬件版本</item>
+        <item>CPU型号</item>
+        <item>运行内存</item>
+        <item>内置存储</item>
+    </string-array>
+    <string-array name="set_video_tv_list">
+        <item>720P-50Hz</item>
+        <item>720P-60Hz</item>
+        <item>1080i-50Hz</item>
+        <item>1080i-60Hz</item>
+        <item>1080P-50Hz</item>
+        <item>1080P-60Hz</item>
+        <item>2160P-30Hz</item>
+        <item>2160P-25Hz</item>
+        <item>2160P-24Hz</item>
+    </string-array>
+    <string-array name="set_video_tv_list_value">
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>1</item>
+        <item>0</item>
+        <item>258</item>
+        <item>257</item>
+        <item>256</item>
+    </string-array>
+
+    <!-- hdmi output -->
+    <string-array name="hdmi_output_show">
+        <item>关闭</item>
+        <item>自动</item>
+        <item>解码</item>
+        <item>透传</item>
+    </string-array>
+    <string-array name="hdmi_output_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_path"
+            style="@style/txt_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="20dip"
+            android:padding="0dip"
+            android:text="@string/wire_connector" />
+
+        <TextView
+            android:id="@+id/tv_ethernet_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:padding="0dip"
+            android:text="@string/eth_phy_link_down_check"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="21sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_path"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="230dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_on"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_on"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_off"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_off"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/ll_path"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/wire_connect_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_PPPOE"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="51dip"
+                android:layout_weight="1"
+                android:ems="6"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@+id/tv_LAN_DHCP"
+                android:text="@string/pppoe"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_DHCP"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="51dip"
+                android:layout_weight="1"
+                android:ems="6"
+                android:focusableInTouchMode="true"
+                android:text="@string/DHCP" />
+
+            <TextView
+                android:id="@+id/tv_LAN"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="51dip"
+                android:layout_weight="1"
+                android:ems="6"
+                android:focusableInTouchMode="true"
+                android:text="@string/LAN" />
+
+            <TextView
+                android:id="@+id/tv_LAN_DHCP"
+                style="@style/txt_title"
+                android:layout_width="0dip"
+                android:layout_height="51dip"
+                android:layout_weight="1"
+                android:ems="6"
+                android:focusableInTouchMode="true"
+                android:nextFocusRight="@id/tv_PPPOE"
+                android:text="@string/LAN_DHCP" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/myFrameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/txt_wire_notes_720P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/txt_wire_notes_720P"
+                    android:layout_width="450dip"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glad_point"
+                    android:drawablePadding="10dip"
+                    android:text="@string/dial_up_access" />
+
+                <TextView
+                    style="@style/txt_wire_notes_720P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glad_point"
+                    android:drawablePadding="10dip"
+                    android:text="@string/hand_set_ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/txt_wire_notes_720P"
+                    android:layout_width="450dip"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glad_point"
+                    android:drawablePadding="10dip"
+                    android:text="@string/need_tmt_account_and_password" />
+
+                <TextView
+                    style="@style/txt_wire_notes_720P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glad_point"
+                    android:drawablePadding="10dip"
+                    android:text="@string/auto_get_ip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

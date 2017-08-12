@@ -1,0 +1,26 @@
+defines = -DV8_DEPRECATION_WARNINGS -DENABLE_BROWSER_CDMS -DUSE_BROWSER_SPELLCHECKER=1 -DUSE_OPENSSL_CERTS=1 -DNO_TCMALLOC -DUSE_EXTERNAL_POPUP_MENU=1 -DDISABLE_NACL -DENABLE_SUPERVISED_USERS=1 -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DENABLE_MEDIA_ROUTER=1 -DFIELDTRIAL_TESTING_ENABLED -D_FILE_OFFSET_BITS=64 -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION=r12b -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D_FORTIFY_SOURCE=2 -D__GNU_SOURCE=1 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0
+include_dirs = -I../.. -Igen -Igen/content/iptv/content_iptv_jni_headers -Igen/content/iptv/content_iptv_jni_headers/content/iptv
+cflags = -fno-strict-aliasing --param=ssp-buffer-size=4 -fstack-protector -funwind-tables -fPIC -pipe -ffunction-sections -fno-short-enums -finline-limit=64 -march=armv7-a -mfloat-abi=softfp -mthumb -mthumb-interwork -mtune=generic-armv7-a -fno-tree-sra -fno-caller-saves -mfpu=neon -Wall -Werror -Wno-psabi -Wno-unused-local-typedefs -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Os -fno-ident -fdata-sections -ffunction-sections -fomit-frame-pointer -gdwarf-3 -g2 --sysroot=../../third_party/android_tools/ndk/platforms/android-16/arch-arm -fvisibility=hidden
+cflags_cc = -fno-threadsafe-statics -fvisibility-inlines-hidden -std=gnu++11 -Wno-narrowing -fno-rtti -isystem../../third_party/android_tools/ndk/sources/cxx-stl/llvm-libc++/libcxx/include -isystem../../third_party/android_tools/ndk/sources/cxx-stl/llvm-libc++abi/libcxxabi/include -isystem../../third_party/android_tools/ndk/sources/android/support/include -fno-exceptions
+label_name = content_iptv_jni_lib
+root_out_dir = .
+target_out_dir = obj/content/iptv
+target_output_name = libcontent_iptv_jni_lib
+
+build obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp: stamp obj/base/android_runtime_jni_headers__jni_Runtime.stamp obj/base/base_jni_headers__jni_gen.stamp obj/base/build_date.stamp obj/base/debugging_flags.stamp obj/base/allocator/features.stamp obj/content/iptv/content_iptv_jni_headers__jni_gen.stamp
+build obj/content/iptv/content_iptv_jni_lib/STBAppManagerCTC.o: cxx ../../content/iptv/STBAppManagerCTC.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/AuthenticationCTC.o: cxx ../../content/iptv/AuthenticationCTC.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/EthernetList.o: cxx ../../content/iptv/EthernetList.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/HTMLObjectElement.o: cxx ../../content/iptv/HTMLObjectElement.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/device_interface.o: cxx ../../content/iptv/device_interface.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/device_library_function.o: cxx ../../content/iptv/device_library_function.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/UtilityCTC.o: cxx ../../content/iptv/UtilityCTC.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/MediaPlayerCTC.o: cxx ../../content/iptv/MediaPlayerCTC.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/MediaProcessor_interface.o: cxx ../../content/iptv/MediaProcessor_interface.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/MediaProcessor_library_function.o: cxx ../../content/iptv/MediaProcessor_library_function.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+build obj/content/iptv/content_iptv_jni_lib/device_callback.o: cxx ../../content/iptv/device_callback.cc || obj/content/iptv/content_iptv_jni_lib.inputdeps.stamp
+
+build obj/content/iptv/libcontent_iptv_jni_lib.a: alink obj/content/iptv/content_iptv_jni_lib/STBAppManagerCTC.o obj/content/iptv/content_iptv_jni_lib/AuthenticationCTC.o obj/content/iptv/content_iptv_jni_lib/EthernetList.o obj/content/iptv/content_iptv_jni_lib/HTMLObjectElement.o obj/content/iptv/content_iptv_jni_lib/device_interface.o obj/content/iptv/content_iptv_jni_lib/device_library_function.o obj/content/iptv/content_iptv_jni_lib/UtilityCTC.o obj/content/iptv/content_iptv_jni_lib/MediaPlayerCTC.o obj/content/iptv/content_iptv_jni_lib/MediaProcessor_interface.o obj/content/iptv/content_iptv_jni_lib/MediaProcessor_library_function.o obj/content/iptv/content_iptv_jni_lib/device_callback.o | ../../third_party/android_tools/ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a || obj/content/iptv/content_iptv_jni_headers.stamp obj/base/base.stamp obj/base/libbase_paths.a obj/base/libbase_static.a obj/base/allocator/unified_allocator_shim.stamp obj/base/third_party/dynamic_annotations/libdynamic_annotations.a obj/third_party/modp_b64/libmodp_b64.a obj/third_party/android_tools/cpu_features.stamp obj/third_party/ashmem/ashmem.stamp obj/base/third_party/libevent/libevent.a
+  arflags =
+  output_extension = .a
+  output_dir = obj/content/iptv

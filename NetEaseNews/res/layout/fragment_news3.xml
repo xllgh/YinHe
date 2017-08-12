@@ -1,0 +1,48 @@
+<com.yinhe.neteasenews.ui.PullScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pullScrollView"
+    tools:context=".MainActivity" >
+    
+    <include layout="@layout/xlistview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <include
+                    android:layout_margin="30dp"
+                    layout="@layout/indicator" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@drawable/selector_focus_common" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.yinhe.neteasenews.ui.PullScrollView>

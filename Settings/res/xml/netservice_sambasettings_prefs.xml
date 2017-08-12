@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/samba_setting_title">
+	<CheckBoxPreference android:key="control_checkbox"
+		android:title="SAMBA" android:summaryOff="@string/stop"
+		android:summaryOn="@string/start" />
+
+	<PreferenceCategory android:title="@string/login_setting">
+		<Preference android:title="@string/user_name"
+			android:summary="@string/samba_user_name" android:enabled="false" />
+		<CheckBoxPreference android:key="password_enabled"
+			android:title="@string/enable_password" android:summary="@string/enpwd_summary" />
+	</PreferenceCategory>
+
+	<PreferenceScreen android:key="button_change_pass_key"
+		android:title="@string/pass" android:dialogTitle="@string/pass"
+		android:singleLine="true" android:dialogLayout="@layout/pwd_modified_layout" />
+
+</PreferenceScreen>

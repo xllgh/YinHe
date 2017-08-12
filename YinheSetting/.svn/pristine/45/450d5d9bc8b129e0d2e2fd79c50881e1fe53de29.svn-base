@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/logo" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:contentDescription="@null"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/servier_infor" />
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/itv_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="600dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="@string/main_CE_serviecer_address"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/main_CE_serviecer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/please_input_address"
+                android:inputType="text"
+                android:nextFocusDown="@+id/tv_second_CE_serviecer_address"
+                android:nextFocusLeft="@id/main_CE_serviecer_address"
+                android:nextFocusRight="@id/main_CE_serviecer_address"
+                android:nextFocusUp="@+id/tv_updata_serviecer_address"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="600dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="@string/second_CE_serviecer_address"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tv_second_CE_serviecer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/please_input_address"
+                android:inputType="text"
+                android:nextFocusDown="@id/tv_updata_serviecer_address"
+                android:nextFocusLeft="@id/tv_second_CE_serviecer_address"
+                android:nextFocusRight="@id/tv_second_CE_serviecer_address"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="600dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="@string/network_ddress"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_network_ddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dip"
+                android:ems="7"
+                android:text="@string/updata_serviecer_address"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/tv_updata_serviecer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/please_input_address"
+                android:inputType="textUri"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/button_update"
+            android:text="@string/check_update"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/standby">
+    <CheckBoxPreference android:key="hdmi_standby_enable"
+        android:title="@string/hdmi_standby_enable"
+        android:summaryOn="@string/hdmi_standby_enable_on"
+        android:summaryOff="@string/hdmi_standby_enable_off"
+        />
+    <ListPreference
+        android:key="set_hdmi_standby_time"
+        android:title="@string/hdmi_standby_time"
+        android:dialogTitle="@string/hdmi_standby_time"
+        android:entries="@array/set_time_list"
+        android:entryValues="@array/set_time_list_value"
+        android:defaultValue="0" />
+</PreferenceScreen>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg" >
+
+    <include layout="@layout/logo" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:contentDescription="@null"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/network_info" />
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/itv_bg"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_network_info"
+            android:layout_width="400dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:listSelector="@drawable/list_null"
+            android:scrollbars="none" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_nw_detect"
+                style="@style/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_update"
+                android:text="@string/network_info_detect"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_nw_config"
+                style="@style/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_update"
+                android:text="@string/network_info_config" />
+            
+             <Button
+                android:id="@+id/btn_nw_download"
+                style="@style/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_update"
+                android:enabled="false"
+                android:text="@string/network_info_download" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ipvt_bg" >
+
+    <TextView
+        android:id="@+id/tv_titile"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/network_route_set" />
+
+    <LinearLayout
+        android:layout_width="936dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_route_set_wan"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_lan"
+                android:nextFocusUp="@+id/txt_route_set_register_info"
+                android:text="@string/route_set_wan" />
+
+            <TextView
+                android:id="@+id/txt_route_set_lan"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_awifi"
+                android:nextFocusUp="@+id/txt_route_set_wan"
+                android:text="@string/route_set_lan" />
+
+            <TextView
+                android:id="@+id/txt_route_set_awifi"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_user"
+                android:nextFocusUp="@+id/txt_route_set_lan"
+                android:text="@string/network_awifi" />
+
+            <TextView
+                android:id="@+id/txt_route_set_user"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_restart"
+                android:nextFocusUp="@+id/txt_route_set_awifi"
+                android:text="@string/route_set_user" />
+
+            <TextView
+                android:id="@+id/txt_route_set_restart"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_restore"
+                android:nextFocusUp="@+id/txt_route_set_user"
+                android:text="@string/route_set_restart" />
+
+            <TextView
+                android:id="@+id/txt_route_set_restore"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/txt_route_set_register_info"
+                android:nextFocusUp="@+id/txt_route_set_restart"
+                android:text="@string/route_set_restore" />
+
+            <TextView
+                android:id="@+id/txt_route_set_register_info"
+                style="@style/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:focusable="true"
+                android:nextFocusDown="@id/txt_route_set_wan"
+                android:nextFocusUp="@id/txt_route_set_restore"
+                android:text="@string/route_set_register_info" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_network_ethernet_content"
+            android:layout_width="660dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

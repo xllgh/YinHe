@@ -1,0 +1,46 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/base/base_java.build_config"
+    ],
+    "dex_path": "gen/content/iptv/content_iptv_java.dex.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/content/iptv/content_iptv_java.jar",
+    "java": {
+      "full_classpath": [
+        "lib.java/third_party/jsr-305/jsr_305_javalib.jar",
+        "lib.java/third_party/android_tools/android_support_multidex_java__classes.jar",
+        "lib.java/third_party/android_tools/android_support_annotations_java.jar",
+        "lib.java/base/base_java.jar"
+      ]
+    },
+    "name": "content_iptv_java.build_config",
+    "owned_resources_dirs": [],
+    "owned_resources_zips": [],
+    "path": "gen/content/iptv/content_iptv_java.build_config",
+    "requires_android": true,
+    "supports_android": true,
+    "type": "java_library"
+  },
+  "gradle": {
+    "bundled_srcjars": [
+      "gen/content/iptv/content_iptv_aidl.srcjar"
+    ],
+    "dependent_android_projects": [
+      "gen/base/base_java.build_config"
+    ],
+    "dependent_java_projects": [],
+    "dependent_prebuilt_jars": [],
+    "java_sources_file": "gen/content/iptv/content_iptv_java.sources"
+  },
+  "javac": {
+    "classpath": [
+      "lib.java/base/base_java.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/base/base_java.interface.jar"
+    ],
+    "resource_packages": [],
+    "srcjars": []
+  }
+}

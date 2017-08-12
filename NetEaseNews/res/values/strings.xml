@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网易新闻</string>
+    <string name="menu_settings">Settings</string>
+    <string name="test">哈哈哈哈哈哈</string>
+    
+    <!-- long chang rong -->
+    <string name="title_name">网易</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_direct_broadcast">DirectBroadcastActivity</string>
+    <string name="broadcast">直播界面</string>
+    <string name="more">更多</string>
+    <string name="prompt">提示</string>
+    <string name="quitApp">真的要退出应用吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading">正在拼命加载...</string>
+    <string name="lastUpdateTime">上次更新时间：</string>
+    <string name="loadmore">加载更多</string>
+    <string name="readyFresh">准备刷新。。。</string>
+    <string name="freshing">正在刷新。。。</string>
+    <string name="freshed">刷新成功！</string>
+    
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/user_name" />
+
+        <EditText
+            android:id="@+id/et_route_user_name"
+            style="@style/txt_nw_edittext"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/et_route_password_old"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_user_pwd_old" />
+
+        <EditText
+            android:id="@+id/et_route_password_old"
+            style="@style/txt_nw_edittext"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/et_route_password_new"
+            android:nextFocusUp="@id/et_route_user_name"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/txt_content"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/route_set_user_pwd_new" />
+
+        <EditText
+            android:id="@+id/et_route_password_new"
+            style="@style/txt_nw_edittext"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/btn_sure"
+            android:nextFocusUp="@id/et_route_password_old"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/btn_confirm"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button_sure_cancel"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/btn_confirm"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_sure_cancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:text="@string/title_hint"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="20dip"
+            android:contentDescription="@null"
+            android:src="@drawable/warn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/is_fatctory_set"
+            android:textColor="@color/blue"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_sure"
+            style="@style/btn_confirm"
+            android:layout_width="106dip"
+            android:layout_height="30dip"
+            android:background="@drawable/button_sure_cancle"
+            android:singleLine="true"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/bt_cancle"
+            style="@style/btn_confirm"
+            android:layout_width="106dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="80dip"
+            android:background="@drawable/button_sure_cancle"
+            android:singleLine="true"
+            android:text="@string/cancle" />
+    </LinearLayout>
+
+</LinearLayout>

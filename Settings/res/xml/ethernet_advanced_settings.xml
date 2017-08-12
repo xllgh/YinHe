@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ethernet_advanced_titlebar" >
+
+    <PreferenceCategory
+        android:key="eth_mac"
+        android:title="@string/eth_mac" >
+        <Preference
+            style="?android:preferenceInformationStyle"
+            android:key="mac_address" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="eth_device"
+        android:title="@string/network_interface" >
+        <ListPreference
+            android:defaultValue="eth0"
+            android:dialogTitle="@string/network_interface"
+            android:entries="@array/net_device_list"
+            android:entryValues="@array/net_device_value"
+            android:key="device_list"
+            android:persistent="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="auto_reconnect"
+        android:title="@string/net_auto_reconnect" >
+        <CheckBoxPreference
+            android:key="auto_reconnect_net"
+            android:title="@string/auto_reconnect"
+            android:defaultValue="true"
+            android:persistent="true"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="option"
+        android:title="@string/option" >
+        <CheckBoxPreference
+            android:key="option_60_dhcp"
+            android:title="@string/option_60"
+            android:defaultValue="true"
+            android:persistent="true"
+            />
+        <CheckBoxPreference
+            android:key="option_125_dhcp"
+            android:title="@string/option_125"
+            android:defaultValue="true"
+            android:persistent="true"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="eth_ipv6"
+        android:title="@string/ipv6" >
+        <CheckBoxPreference
+            android:key="ipv6_dhcp_checkbox"
+            android:title="@string/ipv6_dhcp" />
+        <CheckBoxPreference
+            android:key="ipv6_static_checkbox"
+            android:title="@string/ipv6_static"  />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ipv6_ip_category"
+        android:title="@string/ipv6_ip" >
+        <com.android.settings.ethernet.Ipv6Dialog
+            android:key="ipv6_ip"
+            android:dependency="ipv6_static_checkbox"
+            android:singleLine="true" >
+        </com.android.settings.ethernet.Ipv6Dialog>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ipv6_gw_category"
+        android:title="@string/ipv6_gateway_txt" >
+        <com.android.settings.ethernet.Ipv6Dialog
+            android:key="ipv6_gw"
+            android:dependency="ipv6_static_checkbox"
+            android:singleLine="true" >
+        </com.android.settings.ethernet.Ipv6Dialog>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ipv6_prefix_length_category"
+        android:title="@string/ipv6_prefix_length_txt" >
+        <com.android.settings.ethernet.Ipv6Dialog
+            android:key="ipv6_prefix_length"
+            android:dependency="ipv6_static_checkbox"
+            android:singleLine="true" >
+        </com.android.settings.ethernet.Ipv6Dialog>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ipv6_dns_category"
+        android:title="@string/ipv6_dns" >
+        <com.android.settings.ethernet.Ipv6Dialog
+            android:dependency="ipv6_static_checkbox"
+            android:key="ipv6_dns1"
+            android:persistent="true"
+            android:singleLine="true"
+            android:summary="DNS1"
+            android:title="" />
+        <com.android.settings.ethernet.Ipv6Dialog
+            android:dependency="ipv6_static_checkbox"
+            android:key="ipv6_dns2"
+            android:persistent="true"
+            android:singleLine="true"
+            android:summary="DNS2"
+            android:title="" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

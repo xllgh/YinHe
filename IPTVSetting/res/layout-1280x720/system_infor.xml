@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/logo" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/system_infor" />
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/itv_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_system_info"
+            android:layout_width="650dip"
+            android:layout_height="350dip"
+            android:layout_marginTop="60dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:focusable="true"
+            android:listSelector="@drawable/linear_bg" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

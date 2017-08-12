@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.yinhe.neteasenews.ui.MyGridView
+            android:id="@+id/mgv_display_column"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            android:gravity="center"
+            android:numColumns="8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add more columns" />
+
+        <com.yinhe.neteasenews.ui.MyGridView
+            android:id="@+id/mgv_undisplay_column"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:descendantFocusability="afterDescendants"
+            android:gravity="center"
+            android:numColumns="8" />
+    </LinearLayout>
+
+</ScrollView>

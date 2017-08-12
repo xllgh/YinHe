@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ipvt_bg"
+    tools:context=".MainActivity" >
+    
+    <include layout="@layout/logo" />
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/txt_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="120dip"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="20dip"
+        android:text="@string/wireless" />
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="230dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_on"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_on"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_off"
+            android:layout_width="65dip"
+            android:layout_height="35dip"
+            android:background="@drawable/button_on_off"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|center_vertical"
+            android:text="@string/turn_off"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="825dip"
+        android:layout_height="426dip"
+        android:layout_below="@id/tv_path"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/itv_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:focusable="false"
+            android:text="@string/select_near_wifi" />
+
+        <ListView
+            android:id="@+id/my_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="15dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="15dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/my_listView"
+            android:nextFocusLeft="@+id/my_listView"
+            android:nextFocusRight="@+id/my_listView"
+            android:nextFocusUp="@+id/button_off"
+            android:scrollbars="vertical" >
+        </ListView>
+        
+    </LinearLayout>
+
+</RelativeLayout>
